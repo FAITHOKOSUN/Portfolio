@@ -1,0 +1,18 @@
+/* Add your custom styles here if needed */
+
+/* Override Bootstrap styles for custom colors */
+.text-gold {
+  color: #ffd700 !important;
+}
+
+.btn-gold {
+  color: #000 !important;
+  background-color: #ffd700 !important;
+  border-color: #ffd700 !important;
+}
+
+.btn-gold:hover {
+  color: #ffd700 !important;
+  background-color: #000 !important;
+  border-color: #ffd700 !important;
+}
