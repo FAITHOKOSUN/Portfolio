@@ -1,82 +1,186 @@
-<div class="container">
-  <h1 class="display-3 text-gold">Your Name</h1>
-  <p class="lead text-gold">Web Developer</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Your Portfolio</title>
+  <style>
+      <style>
+    body {
+      background-color: #2f4f4f; /* Dark Grey */
+      color: #adff2f; /* Yellow-Green */
+    }
 
-<section class="hero bg-dark text-white text-center py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h2 class="display-4 text-gold">Welcome to My Portfolio</h2>
-        <p class="lead">Showcasing my skills and experiences in web development.</p>
-        <a href="#portfolio" class="btn btn-gold btn-lg">View Portfolio</a>
-      </div>
+    .jumbotron {
+      background-color: #adff2f; /* Yellow-Green */
+      color: #2f4f4f; /* Dark Grey */
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .section {
+      background-color: #2f4f4f; /* Dark Grey */
+      color: #adff2f; /* Yellow-Green */
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #ffffff; /* White */
+    }
+
+    .card {
+      background-color: #adff2f; /* Yellow-Green */
+      color: #2f4f4f; /* Dark Grey */
+    }
+
+    .btn-dark {
+      background-color: #2f4f4f; /* Dark Grey */
+      color: #adff2f; /* Yellow-Green */
+    }
+
+    .btn-dark:hover {
+      background-color: #556b2f; /* Dark Olive Green on hover */
+      color: #adff2f; /* Yellow-Green on hover */
+    }
+     .animated-text {
+      animation: fadeInAnimation 2s ease-in-out;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+     .lead {
+      color: #fff; /* White */
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #556b2f; /* Dark Olive Green */
+      border-radius: 5px;
+      margin-top: 30px;
+      transition: background-color 0.3s;
+      text-decoration: none; /* Remove underline from the link */
+    }
+  .lead:hover {
+      background-color: #8fbc8f; /* Dark Sea Green on hover */
+    }
+    ul.list-unstyled {
+  padding: 0;
+}
+
+li.mb-4 {
+  margin-bottom: 1rem; /* Adjust the margin as needed */
+}
+section.text-center {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="jumbotron">
+    <div class="container">
+     <h1 class="display-4 animated-text">
+    Hi, i'm <%= link_to "Faith Okosun", about_path %> Turning code into meaningful experiences, one project at a time.
+    </h1>
+     <!--  <p class="lead">Software Developer</p> -->
+
+       <p class="lead"><a href="#contact">Contact me</a></p>
+
     </div>
   </div>
-</section>
 
-<section id="portfolio" class="portfolio bg-dark text-white py-5">
-  <div class="container">
-    <h2 class="display-4 text-gold mb-5">Portfolio</h2>
-    <!-- Add your portfolio items using Bootstrap components -->
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="your_image_url.jpg" class="card-img-top" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">Project 1</h5>
-            <p class="card-text">Description of the project.</p>
-            <a href="#" class="btn btn-gold">Learn More</a>
+  <div class="section" id="portfolio">
+    <div class="container">
+      <h2 class="display-4 mb-5">Portfolio</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="your_image_url.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Description of the project.</p>
+              <a href="#" class="btn btn-dark">Learn More</a>
+            </div>
           </div>
-        </div>
-      </div>
-      <!-- Add more portfolio items as needed -->
-    </div>
-  </div>
-</section>
-
-<section id="services" class="portfolio bg-dark text-white py-5">
-  <div class="container">
-    <h2 class="display-4 text-gold mb-5">SERVICES</h2>
-    <!-- Add your portfolio items using Bootstrap components -->
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="your_image_url.jpg" class="card-img-top" alt="Service 1">
-          <div class="card-body">
-            <h5 class="card-title">Service 1</h5>
-            <p class="card-text">Description of the service.</p>
-            <a href="#" class="btn btn-gold">Learn More</a>
+         </div>
+           <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="your_image_url.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Description of the project.</p>
+              <a href="#" class="btn btn-dark">Learn More</a>
+            </div>
           </div>
-        </div>
-      </div>
-      <!-- Add more service items as needed -->
-    </div>
-  </div>
-</section>
+         </div>
 
-<section id="contact" class="portfolio bg-dark text-white py-5">
-  <div class="container">
-    <h2 class="display-4 text-gold mb-5">CONTACT</h2>
-    <!-- Add your portfolio items using Bootstrap components -->
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="your_image_url.jpg" class="card-img-top" alt="Contact 1">
-          <div class="card-body">
-            <h5 class="card-title">Contact 1</h5>
-            <p class="card-text">Description of the contact option.</p>
-            <a href="#" class="btn btn-gold">Learn More</a>
+            <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="your_image_url.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Description of the project.</p>
+              <a href="#" class="btn btn-dark">Learn More</a>
+            </div>
           </div>
-        </div>
+         </div>
+
+
+
       </div>
-      <!-- Add more contact items as needed -->
     </div>
   </div>
+
+  
+
+ <section class="text-center">
+  <h2>Skills</h2>
+  <ul class="list-unstyled">
+    <li class="mb-4">
+      <%= image_tag("Java-Logo.png", alt: "Java Logo", width: 50, height: 50) %>
+      <p>Java</p>
+    </li>
+    <li class="mb-4">
+      <%= image_tag("github.png", alt: "JavaScript Logo", width: 50, height: 50) %>
+      <p>JavaScript</p>
+    </li>
+    <li class="mb-4">
+      <%= image_tag("html.png", alt: "HTML Logo", width: 50, height: 50) %>
+      <p>HTML</p>
+    </li>
+    <li class="mb-4">
+      <%= image_tag("css.png", alt: "CSS Logo", width: 50, height: 50) %>
+      <p>CSS</p>
+    </li>
+    <li class="mb-4">
+      <%= image_tag("Bootstrap.png", alt: "Bootstrap Logo", width: 50, height: 50) %>
+      <p>Bootstrap</p>
+    </li>
+    <li class="mb-4">
+      <%= image_tag("ror.png", alt: "Ruby on Rails Logo", width: 50, height: 50) %>
+      <p>Ruby on Rails</p>
+    </li>
+  </ul>
 </section>
 
-<footer class="bg-dark text-white text-center py-3">
-  <div class="container">
-    <p>&copy; 2023 Your Name. All rights reserved.</p>
-  </div>
-</footer>
+
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2023 faith. All rights reserved.</p>
+    </div>
+  </footer>
+
+  
+</body>
+</html>

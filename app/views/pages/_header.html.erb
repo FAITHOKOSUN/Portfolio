@@ -1,18 +1,25 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #323232;"> 
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" style="margin-right: auto;">Faith</a>
+
+  <%= image_tag("55455255.jpg",  width: 60, height: 60) %>
+    <%= link_to(root_path, class: "navbar-brand", style: "margin-right: auto; color: #D3FFA8;") do %>  FAITH OKOSUN 
+<% end %>
+
+      
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <div class="navbar-nav ml-auto">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">About</a>
-        <a class="nav-link" href="#">Contact</a>
-        <a class="nav-link" href="#">Services</a>
-        <a class="nav-link" href="#">Portfolio</a>
+        <%= link_to 'Home', root_path, class: 'nav-link', style: 'color: #FFFFFF;' %>
+
+    <%= link_to 'About', about_path, class: 'nav-link', style: 'color: #FFFFFF;' %>
+    <%= link_to 'Skills', skills_path, class: 'nav-link', style: 'color: #FFFFFF;' %>
+     <a class="nav-link" href="#" style="color: #FFFFFF;">Projects</a>
+        <a class="nav-link" href="#" style="color: #FFFFFF;">Contact</a> 
        
-      </div>
+        
     </div>
   </div>
 </nav>

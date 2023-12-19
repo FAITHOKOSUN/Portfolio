@@ -1,14 +1,107 @@
-<p style="color: green"><%= notice %></p>
 
-<h1>Educations</h1>
+  <title>About Me - Junior Software Developer</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #2f4f4f; /* Dark Grey */
+      color: #adff2f; /* Yellow-Green */
+    }
 
-<div id="educations">
-  <% @educations.each do |education| %>
-    <%= render education %>
-    <p>
-      <%= link_to "Show this education", education %>
-    </p>
-  <% end %>
-</div>
+    header {
+      background-color: #adff2f; /* Yellow-Green */
+      color: #2f4f4f; /* Dark Grey */
+      padding: 50px 20px;
+      text-align: center;
+    }
 
-<%= link_to "New education", new_education_path %>
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #ffffff; /* White */
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li::before {
+      content: "\2022"; /* Bullet point character */
+      color: #556b2f; /* Dark Olive Green bullet point color */
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+ 
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease-out; /* Animation properties */
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .lead {
+      color: #fff; /* White */
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #556b2f; /* Dark Olive Green */
+      border-radius: 5px;
+      margin-top: 30px;
+      transition: background-color 0.3s;
+      text-decoration: none; /* Remove underline from the link */
+    }
+  .lead:hover {
+      background-color: #8fbc8f; /* Dark Sea Green on hover */
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>FAITH OKOSUN</h1>
+    <p>Junior Software Developer</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I am a passionate and dedicated junior software developer with a strong foundation in Java,
+        JavaScript, HTML, CSS, Bootstrap, and Ruby on Rails. I enjoy tackling challenging problems and
+        creating solutions that have a positive impact.
+      </p>
+
+      <p class="lead"><a href="#contact">Download Cv</a></p>
+    </section>
+
+  </main>
+
+ 
+</body>
+</html>

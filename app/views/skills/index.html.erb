@@ -1,14 +1,46 @@
-<p style="color: green"><%= notice %></p>
+<style >
+ul.list-unstyled {
+  padding: 0;
+}
 
-<h1>Skills</h1>
+li.mb-4 {
+  margin-bottom: 1rem; /* Adjust the margin as needed */
+}
+body {
+      font-family: 'Arial', sans-serif;
+      background-color: #2f4f4f; /* Dark Grey */
+      color: #adff2f; /* Yellow-Green */
+    }
 
-<div id="skills">
-  <% @skills.each do |skill| %>
-    <%= render skill %>
-    <p>
-      <%= link_to "Show this skill", skill %>
-    </p>
-  <% end %>
-</div>
-
-<%= link_to "New skill", new_skill_path %>
+</style>
+<body>
+<section class="text-center">
+  <h2>Skills</h2>
+  <ul class="list-unstyled">
+    <li class="mb-4">
+      <%= image_tag("Java-Logo.png", alt: "Java Logo", width: 50, height: 50) %>
+      <p>Java</p>
+    </li>
+    <li class="mb-4">
+      <%= image_tag("github.png", alt: "JavaScript Logo", width: 50, height: 50) %>
+      <p>JavaScript</p>
+    </li>
+    <li class="mb-4">
+      <%= image_tag("html.png", alt: "HTML Logo", width: 50, height: 50) %>
+      <p>HTML</p>
+    </li>
+    <li class="mb-4">
+      <%= image_tag("css.png", alt: "CSS Logo", width: 50, height: 50) %>
+      <p>CSS</p>
+    </li>
+    <li class="mb-4">
+      <%= image_tag("Bootstrap.png", alt: "Bootstrap Logo", width: 50, height: 50) %>
+      <p>Bootstrap</p>
+    </li>
+    <li class="mb-4">
+      <%= image_tag("ror.png", alt: "Ruby on Rails Logo", width: 50, height: 50) %>
+      <p>Ruby on Rails</p>
+    </li>
+  </ul>
+</section>
+</body>
