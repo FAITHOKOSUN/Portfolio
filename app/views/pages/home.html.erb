@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>Your Portfolio</title>
+  <title>Portfolio</title>
   <style>
-      <style>
+     
     body {
       background-color: #2f4f4f; /* Dark Grey */
-      color: #adff2f; /* Yellow-Green */
+      color: #2f4f4f; /* Yellow-Green */
     }
 
     .jumbotron {
+
       background-color: #adff2f; /* Yellow-Green */
       color: #2f4f4f; /* Dark Grey */
       padding: 100px 20px;
@@ -80,7 +81,34 @@ li.mb-4 {
 section.text-center {
   margin-top: 30px;
   margin-bottom: 30px;
+  background: linear-gradient(to bottom, #adff2f, #556b2f);
+  padding: 20px;
+  border-radius: 10px;
+  color: #ffffff; 
 }
+
+ul.list-unstyled {
+  padding: 0;
+}
+
+li.mb-4 {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  border: 3px solid #556b2f; /* Add a white border around each skill box */
+  border-radius: 10px; /* Add rounded corners to the skill boxes */
+  max-width: 200px;
+  margin: 0 auto; 
+  padding: 5px; /* Add padding inside each skill box */
+}
+
+li.mb-4 img {
+  margin-bottom: 10px;
+}
+
+
 
 
   </style>
@@ -144,7 +172,7 @@ section.text-center {
   
 
  <section class="text-center">
-  <h2>Skills</h2>
+  <h1>My Skills</h1>
   <ul class="list-unstyled">
     <li class="mb-4">
       <%= image_tag("Java-Logo.png", alt: "Java Logo", width: 50, height: 50) %>
