@@ -122,7 +122,8 @@ li.mb-4 img {
     </h1>
      <!--  <p class="lead">Software Developer</p> -->
 
-       <p class="lead"><a href="#contact">Contact me</a></p>
+       <p class="lead"> <%= link_to 'Contact', contacts_path %></p>
+
 
     </div>
   </div>
@@ -206,7 +207,22 @@ li.mb-4 img {
   <footer class="bg-dark text-white text-center py-3">
     <div class="container">
       <p>&copy; 2023 faith. All rights reserved.</p>
+
     </div>
+
+<div class="social-media-links">
+  
+  <a href="https://www.linkedin.com/in/faith-onowome-okosun/" target="_blank">
+    <%= image_tag("linkdin.png", alt: "LinkedIn", width: 30, height: 30) %>
+  </a>
+  <a href="https://https://twitter.com/phayteeee" target="_blank">
+    <%= image_tag("X.png", alt: "Twitter", width: 30, height: 30) %>
+  </a>
+  <a href="https://github.com/FAITHOKOSUN" target="_blank">
+    <%= image_tag("github.png", alt: "GitHub", width: 30, height: 30) %>
+  </a>
+</div>
+
   </footer>
 
   

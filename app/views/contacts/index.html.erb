@@ -1,0 +1,78 @@
+<style>
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #adff2f; /* Yellow-Green */
+  color: #2f4f4f; /* Dark Grey */
+}
+/* Example CSS for styling */
+.social-media-links {
+  margin-top: 20px;
+}
+
+.social-media-links a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007bff; /* Adjust the color as needed */
+}
+
+.social-media-links a:hover {
+  text-decoration: underline;
+}
+
+.social-media-links img {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px;
+  border-radius: 50%; /* Optional: For rounded icons */
+  margin-right: 5px; /* Optional: Adjust spacing between icons */
+}
+
+
+</style>
+<h1>Contact Me</h1>
+
+
+I'm interested in both permanent and temporary employment opportunities, and I'm always ready to take on new tasks. Please use the form below to get in touch with me, or connect with me on  LinkedIn by clicking the social media icons in the left sidebar.
+
+
+
+<%= form_with(model: @contact, url: contacts_path, method: :post) do |form| %>
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :email %>
+    <%= form.email_field :email, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :message %>
+    <%= form.text_area :message, class: 'form-control', rows: 5 %>
+  </div>
+
+  <div class="form-group">
+    <%= form.submit 'Send Message', class: 'btn btn-primary' %>
+  </div>
+<% end %>
+
+
+<div class="social-media-links">
+  <p>Connect with me on social media:</p>
+  <a href="https://www.linkedin.com/in/faith-onowome-okosun/" target="_blank">
+    <%= image_tag("linkdin.png", alt: "LinkedIn", width: 30, height: 30) %>
+  </a>
+  <a href="https://https://twitter.com/phayteeee" target="_blank">
+    <%= image_tag("X.png", alt: "Twitter", width: 30, height: 30) %>
+  </a>
+  <a href="https://github.com/FAITHOKOSUN" target="_blank">
+    <%= image_tag("github.png", alt: "GitHub", width: 30, height: 30) %>
+  </a>
+</div>
+
